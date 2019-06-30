@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/progressbar_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_fcm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="Welcome to PlayText"
+            android:textSize="18sp"
+            android:autoLink="all"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/imageButton_go_to_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_check" />
+    </LinearLayout>
+
+</LinearLayout>
